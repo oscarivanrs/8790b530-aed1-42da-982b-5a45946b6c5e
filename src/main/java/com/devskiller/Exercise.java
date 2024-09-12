@@ -11,10 +11,13 @@ public class Exercise {
         List<Integer> result = new ArrayList<>();
         HashMap<Integer, Integer> counts = new HashMap<>();
         integers.forEach(numero -> {
-        	if( counts.get(numero)!=null )
-        		counts.put(numero, counts.get(numero)+1);
-        	else
-        		counts.put(numero, 1);
+        	if( numero!=null )
+        	{
+        		if( counts.get(numero)!=null )
+            		counts.put(numero, counts.get(numero)+1);
+            	else
+            		counts.put(numero, 1);
+        	}
         });
         counts.keySet().forEach(numero -> {
         	if( counts.get(numero)==numberOfDuplicates )
