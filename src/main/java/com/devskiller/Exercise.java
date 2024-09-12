@@ -7,7 +7,6 @@ import java.util.List;
 public class Exercise {
 
     public List<Integer> findDuplicates(List<Integer> integers, int numberOfDuplicates) {
-        throw new UnsupportedOperationException(/*TODO*/);
         List<Integer> result = new ArrayList<>();
         HashMap<Integer, Integer> counts = new HashMap<>();
         integers.forEach(numero -> {
